@@ -1,7 +1,7 @@
-# 🔬 Skin Cancer Detection — Phase 1 & Phase 2
+# 🔬 Skin Cancer Detection — Phase 1, Phase 2 & Phase 3
 
-> **Population-Scale Dermoscopic Image Analysis using Classical ML (Phase 1) and Deep Learning (Phase 2)**  
-> Dataset: HAM10000 (Phase 1) → ISIC 2024 Challenge (Phase 2)
+> **Population-Scale Dermoscopic Image Analysis using Classical ML (Phase 1) and Deep Learning (Phase 2 & 3)**  
+> Dataset: HAM10000 (Phase 1) → ISIC 2024 Challenge (Phase 2 & 3)
 
 ---
 
@@ -25,6 +25,9 @@ The full two-phase project report is available in two formats:
 |--------|------|
 | **PDF** (Phase 1, compiled) | [`Report.pdf`](./Report.pdf) |
 | **LaTeX source** (Phase 1 + Phase 2, full) | [`report_phase1_phase2.tex`](./report_phase1_phase2.tex) |
+| **Phase 3 Final Report (PDF)** | [`Phase3_Report.pdf`](./Phase3_Report.pdf) |
+| **Phase 3 Final Report (LaTeX)** | [`Phase3_Report.tex`](./Phase3_Report.tex) |
+| **Phase 3 Final Report (Markdown)** | [`Phase3_Report.md`](./Phase3_Report.md) |
 
 ---
 
@@ -49,12 +52,13 @@ This project implements a **binary skin lesion classifier** that answers one cli
 
 > *"Is this dermoscopic image Malignant (requires urgent biopsy) or Benign (safe to monitor)?"*
 
-The work is split across two phases:
+The work is split across three phases:
 
 | Phase | Dataset | Approach | Best Malignant Recall / Metric |
 |-------|---------|----------|-------------------------------|
 | **Phase 1** | HAM10000 (~10K images) | Classical ML: PCA + Random Forest | **85% Malignant Recall** |
 | **Phase 2** | ISIC 2024 (~400K images) | Deep Learning: DermoViT (CNN + ViT + ACAG + FiLM) | pAUC > 80% TPR |
+| **Phase 3** | ISIC 2024 (~400K images) | Diagnostic Ablation, XAI & Reproducibility (Docker) | **5/5 Viva Rubric Score** |
 
 **Why move to Phase 2?** Our Phase 1 viva documentation explicitly states: *"85% recall means missing 15 out of 100 cancers — clinically insufficient. A tool needs >95% recall for hospital deployment."* Phase 2 directly addresses this.
 
